@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types'
+import { Box, Title } from './FeedbackSection.styled'
 
 export default function Section({ title, children }) {
-    return <section>
-        <h1>{title}</h1>
+    return <Box>
+        <Title>{title}</Title>
         {children}
-    </section>
+    </Box>
 }
 
 Section.propTypes = {
