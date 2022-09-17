@@ -8,8 +8,8 @@ export default function Statistics({ good, neutral, bad, total, positivePercenta
                 <Item>Good<Text>{good}</Text></Item>
                 <Item>Neutral<Text>{neutral}</Text></Item>
                 <Item>Bad<Text>{bad}</Text></Item>
-                <Item>Total<Text>{total()}</Text></Item>
-                <Item>Positive feedback<Text>{positivePercentage()}%</Text></Item>
+                <Item>Total<Text>{total}</Text></Item>
+                <Item>Positive feedback<Text>{positivePercentage}</Text></Item>
             </List>
         </>
     )
@@ -19,6 +19,6 @@ Statistics.propTypes = {
     good: PropTypes.number.isRequired,
     neutral: PropTypes.number.isRequired,
     bad: PropTypes.number.isRequired,
-    total: PropTypes.func.isRequired,
-    positivePercentage: PropTypes.func.isRequired,
+    total: PropTypes.number.isRequired,
+    positivePercentage: PropTypes.number.isRequired,
 }
